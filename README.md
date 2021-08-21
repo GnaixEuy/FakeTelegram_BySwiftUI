@@ -1,4 +1,4 @@
-### 这是一个使用swiftUI 做的防telegram app，自己造，代码糙，交流练习勿喷
+### 这是一个使用swiftUI 做的仿telegram app，自己造，代码糙，交流练习勿喷
 
 ---
 

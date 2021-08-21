@@ -12,6 +12,7 @@
 		1FBF21B926CFAB0100EA854B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF21B826CFAB0100EA854B /* Assets.xcassets */; };
 		1FBF21BC26CFAB0100EA854B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF21BB26CFAB0100EA854B /* Preview Assets.xcassets */; };
 		1FBF21C526CFAB6500EA854B /* CellPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF21C426CFAB6500EA854B /* CellPostView.swift */; };
+		1FBF21C926D000AC00EA854B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF21C826D000AC00EA854B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1FBF21BB26CFAB0100EA854B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1FBF21BD26CFAB0100EA854B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FBF21C426CFAB6500EA854B /* CellPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPostView.swift; sourceTree = "<group>"; };
+		1FBF21C826D000AC00EA854B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		1FBF21B326CFAB0000EA854B /* FakeTelegram */ = {
 			isa = PBXGroup;
 			children = (
+				1FBF21C826D000AC00EA854B /* README.md */,
 				1FBF21C326CFAB1F00EA854B /* View */,
 				1FBF21B426CFAB0000EA854B /* FakeTelegramApp.swift */,
 				1FBF21B626CFAB0000EA854B /* ContentView.swift */,
@@ -137,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBF21C926D000AC00EA854B /* README.md in Resources */,
 				1FBF21BC26CFAB0100EA854B /* Preview Assets.xcassets in Resources */,
 				1FBF21B926CFAB0100EA854B /* Assets.xcassets in Resources */,
 			);
