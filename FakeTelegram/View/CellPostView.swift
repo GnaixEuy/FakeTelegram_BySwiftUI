@@ -31,13 +31,6 @@ struct CellPostView: View {
                         .foregroundColor(.gray)
                         .font(.system(size: 14))
                     
-                    
-//                    Image(uiImage: UIImage(systemName: self.isRemind ?  "eye":"eye.slash")!)
-//                        .resizable()
-//                        .scaledToFill()
-//                        .frame(width: 20, height: 12, alignment: .topTrailing)
-                        
-                    
                     Spacer()
                     
                     Text("5:44 PM")
@@ -72,7 +65,6 @@ struct CellPostView: View {
                 })
             }).lineLimit(1)
         }
-        
     }
 }
 
