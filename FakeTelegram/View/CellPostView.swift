@@ -27,9 +27,14 @@ struct CellPostView: View {
                         .font(.system(size: 20))
                         .padding(.trailing, 20.0)
                     
-                    Label("", systemImage: self.isRemind ?  "eye":"eye.slash")
-                        .foregroundColor(.gray)
-                        .font(.system(size: 14))
+                    Button(action: {
+                        self.isRemind = !self.isRemind
+                    }, label: {
+                        Image(systemName: self.isRemind ? "eye":"eye.slash")
+                    
+                    })
+                    .frame(width: 24, height: 14, alignment: .bottomTrailing)
+                    .foregroundColor(.secondary)
                     
                     Spacer()
                     
