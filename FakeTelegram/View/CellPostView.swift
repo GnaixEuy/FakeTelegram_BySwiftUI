@@ -68,7 +68,11 @@ struct CellPostView: View {
                         .frame(width: 60, height: 40, alignment: .center)
                     
                 })
-            }).lineLimit(1)
+            })
+            .lineLimit(1)
+            
+//            Divider()
+            
         }
     }
 }
@@ -76,6 +80,6 @@ struct CellPostView: View {
 struct CellPostView_Previews: PreviewProvider {
     static var previews: some View {
         CellPostView()
-            .preferredColorScheme(.dark)
+//            .preferredColorScheme(.dark)
     }
 }
