@@ -31,9 +31,11 @@ struct TalkNavigationView: View {
                 Image(systemName: "square.and.pencil")
                 
             })
+            
         }
         .frame(width: CGFloat(UIScreen.main.bounds.width) - 30, height: 40, alignment: .center)
         .font(.system(size: 22))
+        
     }
 }
 

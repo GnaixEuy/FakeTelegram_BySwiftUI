@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
-            AllTalkMessageView()
+            FriendView()
                 .tabItem { Label("联系人", systemImage:"person.circle.fill") }
             AllTalkMessageView()
                 .tabItem { Label("聊天", systemImage:"bubble.left.and.bubble.right.fill") }
@@ -26,8 +26,3 @@ struct ContentView_Previews: PreviewProvider {
 //                    .preferredColorScheme(.dark)
     }
 }
-
-//
-//加入了导航栏
-//加入了标题栏
-//加入了跳转

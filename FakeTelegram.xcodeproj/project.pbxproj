@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F6C0EB926D39BC0007E02B1 /* FriendNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C0EB826D39BC0007E02B1 /* FriendNavigationView.swift */; };
+		1F6C0EBC26D39D55007E02B1 /* AllPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C0EBB26D39D55007E02B1 /* AllPeopleView.swift */; };
+		1F6C0EBE26D39D63007E02B1 /* FriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C0EBD26D39D63007E02B1 /* FriendView.swift */; };
+		1F6C0EC026D39E34007E02B1 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C0EBF26D39E34007E02B1 /* PeopleView.swift */; };
 		1FBF21B526CFAB0000EA854B /* FakeTelegramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF21B426CFAB0000EA854B /* FakeTelegramApp.swift */; };
 		1FBF21B726CFAB0000EA854B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF21B626CFAB0000EA854B /* ContentView.swift */; };
 		1FBF21B926CFAB0100EA854B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF21B826CFAB0100EA854B /* Assets.xcassets */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F6C0EB826D39BC0007E02B1 /* FriendNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendNavigationView.swift; sourceTree = "<group>"; };
+		1F6C0EBB26D39D55007E02B1 /* AllPeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPeopleView.swift; sourceTree = "<group>"; };
+		1F6C0EBD26D39D63007E02B1 /* FriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendView.swift; sourceTree = "<group>"; };
+		1F6C0EBF26D39E34007E02B1 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		1FBF21B126CFAB0000EA854B /* FakeTelegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeTelegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FBF21B426CFAB0000EA854B /* FakeTelegramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTelegramApp.swift; sourceTree = "<group>"; };
 		1FBF21B626CFAB0000EA854B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F6C0EBA26D39D13007E02B1 /* NavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				1FF5AFFA26D12F2300876E58 /* TalkNavigationView.swift */,
+				1F6C0EB826D39BC0007E02B1 /* FriendNavigationView.swift */,
+			);
+			path = NavigationView;
+			sourceTree = "<group>";
+		};
 		1FBF21A826CFAB0000EA854B = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +101,13 @@
 		1FBF21C326CFAB1F00EA854B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1F6C0EBA26D39D13007E02B1 /* NavigationView */,
 				1FBF21C426CFAB6500EA854B /* CellPostView.swift */,
 				1FF5AFF826D1289D00876E58 /* AllTalkMessageView.swift */,
-				1FF5AFFA26D12F2300876E58 /* TalkNavigationView.swift */,
 				1FD6C48226D2467600BC0AEB /* PostListView.swift */,
+				1F6C0EBB26D39D55007E02B1 /* AllPeopleView.swift */,
+				1F6C0EBD26D39D63007E02B1 /* FriendView.swift */,
+				1F6C0EBF26D39E34007E02B1 /* PeopleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,10 +183,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FF5AFF926D1289D00876E58 /* AllTalkMessageView.swift in Sources */,
+				1F6C0EC026D39E34007E02B1 /* PeopleView.swift in Sources */,
+				1F6C0EBE26D39D63007E02B1 /* FriendView.swift in Sources */,
 				1FBF21B726CFAB0000EA854B /* ContentView.swift in Sources */,
 				1FBF21C526CFAB6500EA854B /* CellPostView.swift in Sources */,
+				1F6C0EBC26D39D55007E02B1 /* AllPeopleView.swift in Sources */,
 				1FF5AFFB26D12F2300876E58 /* TalkNavigationView.swift in Sources */,
 				1FD6C48326D2467600BC0AEB /* PostListView.swift in Sources */,
+				1F6C0EB926D39BC0007E02B1 /* FriendNavigationView.swift in Sources */,
 				1FBF21B526CFAB0000EA854B /* FakeTelegramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

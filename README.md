@@ -12,3 +12,9 @@
 
   <img src="README.assets/image-20210822172407366.png" alt="image-20210822172407366" style="zoom:25%;" />
 
+* 2021年8月23日: :star:加入了基本的联系人界面
+
+  ​							:memo:对诶我正在学emoji的代表含义，有点累今天就偷懒到这
+
+  <img src="README.assets/image-20210823175753092.png" alt="image-20210823175753092" style="zoom:25%;" />
+
