@@ -18,3 +18,7 @@
 
   <img src="README.assets/image-20210823175753092.png" alt="image-20210823175753092" style="zoom:25%;" />
 
+* 2021年8月24日: :lipstick: ​简单做了联系人条目的样式 ; :art:稍微整理了目录结构
+
+  <img src="README.assets/image-20210824164115773.png" alt="image-20210824164115773" style="zoom:25%;" />
+

@@ -60,6 +60,15 @@
 			path = NavigationView;
 			sourceTree = "<group>";
 		};
+		1FA73D2026D4E748006D4DAD /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				1FF5AFF826D1289D00876E58 /* AllTalkMessageView.swift */,
+				1F6C0EBD26D39D63007E02B1 /* FriendView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		1FBF21A826CFAB0000EA854B = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +110,11 @@
 		1FBF21C326CFAB1F00EA854B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1FA73D2026D4E748006D4DAD /* MainView */,
 				1F6C0EBA26D39D13007E02B1 /* NavigationView */,
 				1FBF21C426CFAB6500EA854B /* CellPostView.swift */,
-				1FF5AFF826D1289D00876E58 /* AllTalkMessageView.swift */,
 				1FD6C48226D2467600BC0AEB /* PostListView.swift */,
 				1F6C0EBB26D39D55007E02B1 /* AllPeopleView.swift */,
-				1F6C0EBD26D39D63007E02B1 /* FriendView.swift */,
 				1F6C0EBF26D39E34007E02B1 /* PeopleView.swift */,
 			);
 			path = View;

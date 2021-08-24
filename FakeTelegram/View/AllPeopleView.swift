@@ -53,6 +53,19 @@ struct AllPeopleView: View {
             .padding()
             .foregroundColor(.blue)
             .frame(width: UIScreen.main.bounds.width, height: 40, alignment: .leading)
+            
+            NavigationLink(
+                destination: Text("Destination"),
+                label: {
+                    List{
+                        PeopleView()
+                        PeopleView()
+                        PeopleView()
+                        PeopleView()
+                    }
+                    .padding(.leading, -23.0)
+                })
+                
         })
     }
 }

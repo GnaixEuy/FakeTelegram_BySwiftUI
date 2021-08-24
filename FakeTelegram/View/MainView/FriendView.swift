@@ -13,6 +13,9 @@ struct FriendView: View {
             AllPeopleView()
                 .navigationBarItems(leading: FriendNavigationView())
         }
+        .navigationTitle("联系人")
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
