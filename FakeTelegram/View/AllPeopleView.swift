@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AllPeopleView: View {
     var body: some View {
-        VStack(alignment: .center, spacing: 0, content: {
+        VStack(alignment: .center, content: {
             Button(action: {
                 print("click")
             }, label: {

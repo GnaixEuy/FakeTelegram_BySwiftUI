@@ -14,31 +14,25 @@ struct PeopleView: View {
             Image("HeadPortrait")
                 .resizable()
                 .clipShape(Circle())
-                .scaledToFill()
-                .frame(width: 75, height: 75, alignment: .center)
-                .padding()
+                .scaledToFit()
+                .frame(width: 45, height: 45, alignment: .center)
+                .padding(.leading, 15)
             
             VStack(alignment: .leading){
-                Text("姓名")
+                Text("可可爱兔子")
                     .font(.system(size: 24))
-                    .fontWeight(.bold)
-                    .padding(.init(top: 0, leading: 0, bottom: 4, trailing: 0))
+                    .fontWeight(.medium)
                 
-                Text("简介")
+                Text("最后上线时间：8月24日12:00")
+                    .font(.system(size: 14))
+                    .lineLimit(1)
                     .foregroundColor(.secondary)
-                    
-                    .fontWeight(.light)
             }
             
             Spacer()
             
-            Text("最后上线时间：8月24日12:00")
-                .font(.system(size: 14))
-                .lineLimit(1)
-                .foregroundColor(.secondary)
-                .padding()
         }
-        .frame(width: UIScreen.main.bounds.width, height: 80, alignment: .center)
+        .frame(width: UIScreen.main.bounds.width, height: 55, alignment: .center)
     }
 }
 

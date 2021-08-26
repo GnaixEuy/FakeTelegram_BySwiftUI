@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct FriendNavigationView: View {
+    
+    @State var presentComment: Bool = false
+    
     var body: some View {
         HStack(alignment: .center, spacing: 0){
             Button(action: {}, label: {
@@ -25,10 +28,11 @@ struct FriendNavigationView: View {
             Spacer()
             
             Button(action: {
-                print("click add")
+                self.presentComment = true
             }, label: {
                 Image(systemName: "plus")
-                
+            }).sheet(isPresented: self.$presentComment, content: {
+                AddContactsView()
             })
         }
         .frame(width: CGFloat(UIScreen.main.bounds.width) - 30, height: 40, alignment: .center)
