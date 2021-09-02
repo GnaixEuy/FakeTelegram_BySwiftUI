@@ -8,13 +8,33 @@
 import SwiftUI
 
 struct AllPeopleView: View {
+    
+    @State private var sortTypeActionSheetStatus: Bool = false
+    
     var body: some View {
         VStack(alignment: .center, content: {
             Button(action: {
-                print("click")
+                self.sortTypeActionSheetStatus = true
             }, label: {
                 Text("按最后上线时间排序▼")
             })
+            .actionSheet(isPresented: self.$sortTypeActionSheetStatus) {
+                ActionSheet(
+                    title: Text("排列顺序按:"),
+//                    message: Text("You can't undo this action."),
+                    buttons:[
+                        .cancel(),
+                        .destructive(
+                            Text("姓名")
+//                            action: overwriteWorkout      function： 排序待加入
+                        ),
+                        .default(
+                            Text("最后上线时间")
+//                            action: appendWorkout
+                        )
+                    ]
+                )
+            }
             
             Divider()
             
@@ -65,7 +85,7 @@ struct AllPeopleView: View {
                     }
                     .padding(.leading, -23.0)
                 })
-                
+            
         })
     }
 }

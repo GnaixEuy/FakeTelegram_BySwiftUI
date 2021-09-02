@@ -12,6 +12,8 @@ struct ContentView: View {
         TabView{
             FriendView()
                 .tabItem { Label("联系人", systemImage:"person.circle.fill") }
+            CallView()
+                .tabItem { Label("呼叫", systemImage:"phone.fill") }
             AllTalkMessageView()
                 .tabItem { Label("聊天", systemImage:"bubble.left.and.bubble.right.fill") }
             AllTalkMessageView()

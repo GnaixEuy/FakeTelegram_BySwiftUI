@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F29C20326D7C06E00B5C632 /* CallNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F29C20226D7C06E00B5C632 /* CallNavigationView.swift */; };
 		1F522E2626D526A40063AA5E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F522E2526D526A40063AA5E /* MapView.swift */; };
 		1F522E2826D53B1A0063AA5E /* tst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F522E2726D53B1A0063AA5E /* tst.swift */; };
 		1F6C0EB926D39BC0007E02B1 /* FriendNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C0EB826D39BC0007E02B1 /* FriendNavigationView.swift */; };
@@ -20,12 +21,14 @@
 		1FBF21BC26CFAB0100EA854B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF21BB26CFAB0100EA854B /* Preview Assets.xcassets */; };
 		1FBF21C526CFAB6500EA854B /* CellPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF21C426CFAB6500EA854B /* CellPostView.swift */; };
 		1FBF21C926D000AC00EA854B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF21C826D000AC00EA854B /* README.md */; };
+		1FD3680726E1011900310104 /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3680626E1011900310104 /* CallView.swift */; };
 		1FD6C48326D2467600BC0AEB /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD6C48226D2467600BC0AEB /* PostListView.swift */; };
 		1FF5AFF926D1289D00876E58 /* AllTalkMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5AFF826D1289D00876E58 /* AllTalkMessageView.swift */; };
 		1FF5AFFB26D12F2300876E58 /* TalkNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5AFFA26D12F2300876E58 /* TalkNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F29C20226D7C06E00B5C632 /* CallNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallNavigationView.swift; sourceTree = "<group>"; };
 		1F522E2526D526A40063AA5E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		1F522E2726D53B1A0063AA5E /* tst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tst.swift; sourceTree = "<group>"; };
 		1F6C0EB826D39BC0007E02B1 /* FriendNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendNavigationView.swift; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 		1FBF21BD26CFAB0100EA854B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FBF21C426CFAB6500EA854B /* CellPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPostView.swift; sourceTree = "<group>"; };
 		1FBF21C826D000AC00EA854B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		1FD3680626E1011900310104 /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
 		1FD6C48226D2467600BC0AEB /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 		1FF5AFF826D1289D00876E58 /* AllTalkMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTalkMessageView.swift; sourceTree = "<group>"; };
 		1FF5AFFA26D12F2300876E58 /* TalkNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkNavigationView.swift; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 			children = (
 				1FF5AFFA26D12F2300876E58 /* TalkNavigationView.swift */,
 				1F6C0EB826D39BC0007E02B1 /* FriendNavigationView.swift */,
+				1F29C20226D7C06E00B5C632 /* CallNavigationView.swift */,
 			);
 			path = NavigationView;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 			children = (
 				1FF5AFF826D1289D00876E58 /* AllTalkMessageView.swift */,
 				1F6C0EBD26D39D63007E02B1 /* FriendView.swift */,
+				1FD3680626E1011900310104 /* CallView.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -218,11 +224,13 @@
 				1FF5AFF926D1289D00876E58 /* AllTalkMessageView.swift in Sources */,
 				1F6C0EC026D39E34007E02B1 /* PeopleView.swift in Sources */,
 				1F6C0EBE26D39D63007E02B1 /* FriendView.swift in Sources */,
+				1FD3680726E1011900310104 /* CallView.swift in Sources */,
 				1F7CB0F626D67220003AF85E /* AddContactsView.swift in Sources */,
 				1F522E2626D526A40063AA5E /* MapView.swift in Sources */,
 				1FBF21B726CFAB0000EA854B /* ContentView.swift in Sources */,
 				1FBF21C526CFAB6500EA854B /* CellPostView.swift in Sources */,
 				1F6C0EBC26D39D55007E02B1 /* AllPeopleView.swift in Sources */,
+				1F29C20326D7C06E00B5C632 /* CallNavigationView.swift in Sources */,
 				1FF5AFFB26D12F2300876E58 /* TalkNavigationView.swift in Sources */,
 				1FD6C48326D2467600BC0AEB /* PostListView.swift in Sources */,
 				1F6C0EB926D39BC0007E02B1 /* FriendNavigationView.swift in Sources */,

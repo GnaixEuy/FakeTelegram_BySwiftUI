@@ -31,8 +31,11 @@ struct FriendNavigationView: View {
                 self.presentComment = true
             }, label: {
                 Image(systemName: "plus")
-            }).sheet(isPresented: self.$presentComment, content: {
+            })
+            .sheet(isPresented: self.$presentComment, content: {
                 AddContactsView()
+                    .frame( height: UIScreen.main.bounds.height/2, alignment: .center)
+                    .ignoresSafeArea()
             })
         }
         .frame(width: CGFloat(UIScreen.main.bounds.width) - 30, height: 40, alignment: .center)

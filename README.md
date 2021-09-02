@@ -24,3 +24,6 @@
 
 * 2021年8月26日: :rocket:添加了添加用户模态框
 
+* 完成了模态框的一些细节；写了呼叫界面的navigation；写了联系人排序的actionSheet（功能未做，等待界面基本完成开始做各功能）
+
+<img src="README.assets/image-20210902210112440.png" alt="image-20210902210112440" style="zoom: 33%;" />
