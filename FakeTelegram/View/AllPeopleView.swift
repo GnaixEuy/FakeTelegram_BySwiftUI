@@ -10,6 +10,7 @@ import SwiftUI
 struct AllPeopleView: View {
     
     @State private var sortTypeActionSheetStatus: Bool = false
+    @State private var inviationFrinedSheetStatus: Bool = false
     
     var body: some View {
         VStack(alignment: .center, content: {
@@ -57,22 +58,26 @@ struct AllPeopleView: View {
             
             Divider()
             
-            ZStack{
-                NavigationLink(
-                    destination: Text("Destination"),
-                    label: {
-                        Label(
-                            title: { Text("邀请朋友") },
-                            icon: { Image(systemName: "person.badge.plus")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 30, height: 25, alignment: .center) }
-                        ).lineLimit(1)
-                    })
-            }
-            .padding()
-            .foregroundColor(.blue)
-            .frame(width: UIScreen.main.bounds.width, height: 40, alignment: .leading)
+            Button(action: {
+                self.inviationFrinedSheetStatus = true
+            }, label: {
+                Label(
+                    title: { Text("邀请朋友") },
+                    icon: { Image(systemName: "person.badge.plus")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30, height: 25, alignment: .center) }
+                )
+                .lineLimit(1)
+                .padding()
+                .foregroundColor(.blue)
+                .frame(width: UIScreen.main.bounds.width, height: 40, alignment: .leading)
+                .sheet(isPresented: self.$inviationFrinedSheetStatus, content: {
+                    InvitationFriendsView()
+                })
+            })
+            
+            
             
             NavigationLink(
                 destination: Text("Destination"),

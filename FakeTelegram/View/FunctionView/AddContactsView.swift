@@ -42,6 +42,7 @@ struct AddContactsView: View {
             Divider()
          
             HStack{
+                
                 Image("logo")
                     .resizable()
                     .clipShape(Circle())

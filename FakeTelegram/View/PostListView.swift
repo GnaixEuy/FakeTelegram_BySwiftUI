@@ -9,36 +9,21 @@ import SwiftUI
 
 struct PostListView: View {
     var body: some View {
-        List{
-            ZStack{
-                NavigationLink(
-                    destination: Text("Destination"),
-                    label: {
-                        EmptyView()
-                    })
-//                    .buttonStyle(PlainButtonStyle())
-                    .opacity(0)
-                CellPostView()
-            }
-            
-            ZStack{
-                NavigationLink(
-                    destination: Text("Destination"),
-                    label: {
-                        EmptyView()
-                    })
-                    .opacity(0)
-                CellPostView()
-            }
-            
-            ZStack{
-                NavigationLink(
-                    destination: Text("Destination"),
-                    label: {
-                        EmptyView()
-                    })
-                    .opacity(0)
-                CellPostView()
+        ScrollView(.vertical){
+            VStack(alignment: .leading){
+                ForEach(0 ..< 100) {_ in
+                    ZStack{
+                        NavigationLink(
+                            destination: Text("Destination"),
+                            label: {
+                                EmptyView()
+                            })
+                            //                                                    .buttonStyle(PlainButtonStyle())
+                            .opacity(0)
+                        CellPostView()
+                    }
+                }
+                
             }
         }
     }
@@ -46,6 +31,8 @@ struct PostListView: View {
 
 struct PostListView_Previews: PreviewProvider {
     static var previews: some View {
-        PostListView()
+        Group {
+            PostListView()
+        }
     }
 }
