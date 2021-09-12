@@ -10,21 +10,14 @@ import SwiftUI
 struct PostListView: View {
     var body: some View {
         ScrollView(.vertical){
-            VStack(alignment: .leading){
-                ForEach(0 ..< 100) {_ in
-                    ZStack{
-                        NavigationLink(
-                            destination: Text("Destination"),
-                            label: {
-                                EmptyView()
-                            })
-                            //                                                    .buttonStyle(PlainButtonStyle())
-                            .opacity(0)
+            ForEach(0 ..< 100) {_ in
+                NavigationLink(
+                    destination: Text("详细聊天界面"),
+                    label: {
                         CellPostView()
-                    }
-                }
-                
+                    })
             }
+            .buttonStyle(PlainButtonStyle())
         }
     }
 }
