@@ -17,8 +17,8 @@ struct AddContactsView: View {
     
     var body: some View {
         
-        VStack{
-            HStack(alignment: .center, spacing: 0, content: {
+        VStack(){
+            HStack( spacing: 0, content: {
 
                 Button(action: {
                     self.presentationMode.wrappedValue.dismiss()
@@ -50,23 +50,19 @@ struct AddContactsView: View {
                     .frame(width: 75, height: 75, alignment: .center)
                 
                 VStack(alignment: .center, content: {
-                    
                     TextField("名字", text: self.$name)
-                        .keyboardType(.namePhonePad)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding(.vertical, 1)
-
                     TextField("姓氏", text: self.$name)
-                        .keyboardType(.namePhonePad)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding(.trailing, 1)
                 })
+                .keyboardType(.namePhonePad)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding(.vertical, 1)
             }
             
             Divider()
             
            //function：添加手机号，先不做
         }
+        
     }
 }
 

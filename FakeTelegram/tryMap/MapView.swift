@@ -24,7 +24,7 @@ struct MapView: UIViewRepresentable {
         
                
                //初始化一个二维坐标，并设置经纬度的数值。
-               let coordinate2D = CLLocationCoordinate2D(latitude: 24.588592, longitude: 118.094826)
+               let coordinate2D = CLLocationCoordinate2D(latitude: 24.58899, longitude: 118.094849)
         
                //设置地图视图的缩放比例
                let zoomLevel = 0.004

@@ -29,3 +29,7 @@
 <img src="README.assets/image-20210902210112440.png" alt="image-20210902210112440" style="zoom: 33%;" />
 
 * 2021年9月9日： 添加了邀请朋友的基本view结构，添加了弹出，xcode 的wakatime终于打上了，继续开始写东西
+
+* 2021年9月20日： 无聊写了一点UI玩玩看
+
+  <img src="README.assets/image-20210920170738774.png" alt="image-20210920170738774" style="zoom:50%;" />
