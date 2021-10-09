@@ -24,7 +24,7 @@ struct schoolView: View {
     
     private let ScreenSize: CGRect = UIScreen.main.bounds
     private let school_telephone_number: String = "+86(592)6183185"
-    private var school_introduce: String = "net"
+    @State private var school_introduce: String = "点击查看学校信息"
     
     @State private var call_phone_actionSheet_state: Bool = false
     
@@ -60,7 +60,21 @@ struct schoolView: View {
                     Spacer()
                         .frame( height: 20)
                     
-                    Text(self.school_introduce)
+                   Button {
+                        let url = URLRequest(url: URL(string: "http://localhost:8888/getSchoolInfo")!)
+                        
+                        AF.request(url)
+                            .responseString { response in
+                                switch response.result {
+                                case let .success(data):
+                                    self.school_introduce = data
+                                case let .failure(error):
+                                    print(error)
+                                }
+                            }
+                    } label: {
+                        Text(self.school_introduce)
+                    }
                     
                 }
                 .frame(width: self.ScreenSize.width - 30, alignment: .leading)
@@ -133,9 +147,8 @@ struct schoolView: View {
             }
         })
     }
-    
-    
 }
+
 
 struct schoolView_Previews: PreviewProvider {
     static var previews: some View {
