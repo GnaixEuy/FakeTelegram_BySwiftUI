@@ -18,11 +18,13 @@
 
 import SwiftUI
 import MapKit
+import Alamofire
 
-struct tst: View {
+struct schoolView: View {
     
     private let ScreenSize: CGRect = UIScreen.main.bounds
     private let school_telephone_number: String = "+86(592)6183185"
+    private var school_introduce: String = "net"
     
     @State private var call_phone_actionSheet_state: Bool = false
     
@@ -56,19 +58,20 @@ struct tst: View {
                     }
                     
                     Spacer()
+                        .frame( height: 20)
                     
-                    Text("集美大学诚毅学院（Chengyi University College， Jimei University）创办于2003年，是经教育部批准，由集美大学与福建集美大学教育发展基金会合作举办的独立学院。截至2021年3月，学校占地面积550多亩；下设11个教学系（院）、开设37个本科专业；有专任教师近800人，在校生近15000人。")
+                    Text(self.school_introduce)
+                    
                 }
                 .frame(width: self.ScreenSize.width - 30, alignment: .leading)
                 .offset(y: -240)
                 .zIndex(998)
                 
                 Text("校园一景")
-                    //                .fontWeight(.bold)
+                //                .fontWeight(.bold)
                     .foregroundColor(.black)
                     .font(.title)
                     .frame(alignment: .leading)
-                    
                     .offset(x: -self.ScreenSize.width/3 ,y:-220)
                 
                 ScrollView(.horizontal, showsIndicators: false, content: {
@@ -82,19 +85,20 @@ struct tst: View {
                         }
                     }
                 })
-                .frame(width: self.ScreenSize.width, alignment: .center)
-                .padding(.horizontal)
-                .ignoresSafeArea(.all)
-                .border(Color.black, width: 2)
-                .offset(y:-220)
+                    .frame(width: self.ScreenSize.width, alignment: .center)
+                    .padding(.horizontal)
+                    .ignoresSafeArea(.all)
+                    .border(Color.black, width: 2)
+                    .offset(y:-220)
                 
                 VStack(alignment: .leading){
                     Text("详细信息")
-                        //                        .bold()
+                    //                        .bold()
                         .font(.title2)
                         .foregroundColor(.black)
                     
-                    
+                    Spacer()
+                        .frame( height: 10)
                     
                     VStack(alignment: .leading){
                         Text("电话")
@@ -110,9 +114,17 @@ struct tst: View {
                                 buttons:[
                                     .cancel(),
                                     .default(
-                                        Text(self.school_telephone_number)
+                                        Text(self.school_telephone_number),
+                                        action:{
+                                            let phone = "tel://"
+                                            let phone_number_format = self.school_telephone_number + phone
+                                            guard let url = URL(string: phone_number_format) else { return }
+                                            //                                            UIApplication.shared.openURL(url)       //deprecated
+                                            UIApplication.shared.open(url)
+                                        }
                                     )
-                                ])
+                                ]
+                            )
                         }
                     }
                 }
@@ -120,13 +132,13 @@ struct tst: View {
                 .padding()
             }
         })
-        
-        
     }
+    
+    
 }
 
-struct tst_Previews: PreviewProvider {
+struct schoolView_Previews: PreviewProvider {
     static var previews: some View {
-        tst()
+        schoolView()
     }
 }

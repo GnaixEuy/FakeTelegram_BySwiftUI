@@ -16,9 +16,10 @@ struct ContentView: View {
                 .tabItem { Label("呼叫", systemImage:"phone.fill") }
             AllTalkMessageView()
                 .tabItem { Label("聊天", systemImage:"bubble.left.and.bubble.right.fill") }
-            AllTalkMessageView()
+            schoolView()
                 .tabItem { Label("设置", systemImage:"gear") }
         }
+        
     }
 }
 

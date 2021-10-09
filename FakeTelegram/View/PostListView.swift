@@ -15,7 +15,8 @@ struct PostListView: View {
                     destination: Text("详细聊天界面"),
                     label: {
                         CellPostView()
-                    })
+                    }
+                )
             }
             .buttonStyle(PlainButtonStyle())
         }
