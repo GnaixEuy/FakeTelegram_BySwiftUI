@@ -13,29 +13,38 @@ struct InvitationFriendsView: View {
     
     var body: some View {
         
-        HStack(spacing: 0) {
-            Button(action: {
-                self.presentationMode.wrappedValue.dismiss()
-            }, label: {
-                Text("关闭")
-            })
-            
-            Spacer()
-            
-            Text("邀请朋友")
-                .font(.system(size: 20))
-                .foregroundColor(.black)
-                .fontWeight(.bold)
-            
-            Spacer()
-            
-            Button(action: {
+        VStack{
+            HStack(spacing: 0) {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }, label: {
+                    Text("关闭")
+                })
                 
-            }, label: {
-                Text("全选")
-            })
+                Spacer()
+                
+                Text("邀请朋友")
+                    .font(.system(size: 20))
+                    .foregroundColor(.black)
+                    .fontWeight(.bold)
+                
+                Spacer()
+                
+                Button(action: {
+                    
+                }, label: {
+                    Text("全选")
+                })
+            }
+            .padding(.horizontal)
+            
+            Spacer()
+            Text("      联系人")
+                .frame(width: UIScreen.main.bounds.width ,alignment: .leading)
+                .background(Color.gray)
+            Spacer()
+            
         }
-        .padding(.horizontal)
     }
 }
 

@@ -35,3 +35,5 @@
   <img src="README.assets/image-20210920170738774.png" alt="image-20210920170738774" style="zoom: 25%;" />
   
   * 2021年12月2日: 忙里偷闲学了点3Dtouch
+  
+    <img src="README.assets/截屏2021-12-02 15.52.52-8431651.png" alt="截屏2021-12-02 15.52.52" style="zoom:50%;" />

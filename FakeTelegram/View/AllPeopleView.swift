@@ -86,8 +86,9 @@ struct AllPeopleView: View {
                             PeopleView()
                         })
                         .contextMenu{
-                            Text("3DTouch学习")
+                           schoolView()
                         }
+                        
                 }
                 .buttonStyle(PlainButtonStyle())
                 
