@@ -16,6 +16,7 @@
 		1F6C0EC026D39E34007E02B1 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C0EBF26D39E34007E02B1 /* PeopleView.swift */; };
 		1F7CB0F626D67220003AF85E /* AddContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7CB0F526D67220003AF85E /* AddContactsView.swift */; };
 		1F84237326E9E65C00F64D5C /* InvitationFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F84237226E9E65C00F64D5C /* InvitationFriendsView.swift */; };
+		1F97D9EF2758B0C400D3F618 /* test3DtouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97D9EE2758B0C400D3F618 /* test3DtouchView.swift */; };
 		1FA2563B2711B40A001F93DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1FA2563A2711B40A001F93DC /* Alamofire */; };
 		1FA2563E2711BD46001F93DC /* testAF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2563D2711BD46001F93DC /* testAF.swift */; };
 		1FBF21B526CFAB0000EA854B /* FakeTelegramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF21B426CFAB0000EA854B /* FakeTelegramApp.swift */; };
@@ -40,6 +41,7 @@
 		1F6C0EBF26D39E34007E02B1 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		1F7CB0F526D67220003AF85E /* AddContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactsView.swift; sourceTree = "<group>"; };
 		1F84237226E9E65C00F64D5C /* InvitationFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationFriendsView.swift; sourceTree = "<group>"; };
+		1F97D9EE2758B0C400D3F618 /* test3DtouchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test3DtouchView.swift; sourceTree = "<group>"; };
 		1FA2563D2711BD46001F93DC /* testAF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testAF.swift; sourceTree = "<group>"; };
 		1FBF21B126CFAB0000EA854B /* FakeTelegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeTelegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FBF21B426CFAB0000EA854B /* FakeTelegramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTelegramApp.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				1FA2563D2711BD46001F93DC /* testAF.swift */,
+				1F97D9EE2758B0C400D3F618 /* test3DtouchView.swift */,
 			);
 			path = tryNet;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				1FBF21C526CFAB6500EA854B /* CellPostView.swift in Sources */,
 				1F6C0EBC26D39D55007E02B1 /* AllPeopleView.swift in Sources */,
 				1F29C20326D7C06E00B5C632 /* CallNavigationView.swift in Sources */,
+				1F97D9EF2758B0C400D3F618 /* test3DtouchView.swift in Sources */,
 				1FF5AFFB26D12F2300876E58 /* TalkNavigationView.swift in Sources */,
 				1FD6C48326D2467600BC0AEB /* PostListView.swift in Sources */,
 				1FA2563E2711BD46001F93DC /* testAF.swift in Sources */,

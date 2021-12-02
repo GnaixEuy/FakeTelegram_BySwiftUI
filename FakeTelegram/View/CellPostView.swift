@@ -66,12 +66,10 @@ struct CellPostView: View {
                         .lineLimit(1)
                         .cornerRadius(8)
                         .frame(width: 60, height: 40, alignment: .center)
-                    
                 })
             })
             .lineLimit(1)
             
-//            Divider()
             
         }
     }

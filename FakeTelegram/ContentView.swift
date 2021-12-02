@@ -19,7 +19,6 @@ struct ContentView: View {
             schoolView()
                 .tabItem { Label("设置", systemImage:"gear") }
         }
-        
     }
 }
 
